@@ -1,0 +1,7 @@
+shared:
+  image: node:12
+  steps:
+    - echo: echo hi
+jobs:
+  external_fork:
+    requires: [~sd@20:main]
